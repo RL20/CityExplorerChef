@@ -10,6 +10,10 @@ git '/home/ubuntu/CityExplorer' do
   action :sync
 end
  
+package 'python3-pip' do
+  action :install
+end
+
 # Install requirements
 #execute 'install_requirements' do
 #  command 'pip install -r /opt/cityexplorer/requirements.txt'
