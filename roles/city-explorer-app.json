@@ -1,4 +1,4 @@
 {
-  "name": "city-explorer-app-db",
-  "run_list": ["recipe[city-explorer-app-db]"]
+  "name": "city-explorer-app",
+  "run_list": ["recipe[city-explorer-app]"]
 }
