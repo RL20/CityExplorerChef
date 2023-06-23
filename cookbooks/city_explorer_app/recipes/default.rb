@@ -5,8 +5,8 @@
 # Copyright:: 2023, The Authors, All Rights Reserved.
 
 # Clone the application repository
-git 'https://github.com/RL20/CityExplorer.git' do
-  destination '/home/ubuntu/'
+git '/home/ubuntu/CityExplorer' do
+  repository 'https://github.com/RL20/CityExplorer.git'
   action :sync
 end
  
