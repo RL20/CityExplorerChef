@@ -1,8 +1,8 @@
-name 'city_explorer_app_db'
+name 'city_explorer_app'
 maintainer 'The Authors'
 maintainer_email 'you@example.com'
 license 'All Rights Reserved'
-description 'Installs/Configures city_explorer_app_db'
+description 'Installs/Configures city_explorer_app'
 version '0.1.0'
 chef_version '>= 16.0'
 
@@ -10,10 +10,10 @@ chef_version '>= 16.0'
 # tracked.  A `View Issues` link will be displayed on this cookbook's page when
 # uploaded to a Supermarket.
 #
-# issues_url 'https://github.com/<insert_org_here>/city_explorer_app_db/issues'
+# issues_url 'https://github.com/<insert_org_here>/city_explorer_app/issues'
 
 # The `source_url` points to the development repository for this cookbook.  A
 # `View Source` link will be displayed on this cookbook's page when uploaded to
 # a Supermarket.
 #
-# source_url 'https://github.com/<insert_org_here>/city_explorer_app_db'
+# source_url 'https://github.com/<insert_org_here>/city_explorer_app'
