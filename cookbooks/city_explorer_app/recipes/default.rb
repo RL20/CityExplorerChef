@@ -9,10 +9,10 @@ git '/home/ubuntu/CityExplorer' do
   repository 'https://github.com/RL20/CityExplorer.git'
   action :sync
 end
- 
-package 'python3-pip' do
-  action :install
-end
+
+apt_update
+
+package 'python3-pip'
 
 # Install requirements
 #execute 'install_requirements' do
