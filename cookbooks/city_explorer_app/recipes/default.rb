@@ -6,23 +6,23 @@
 
 # Clone the application repository
 git 'https://github.com/RL20/CityExplorer.git' do
-  destination '/opt/cityexplorer'
+  destination '/home/ubuntu/'
   action :sync
 end
  
 # Install requirements
-execute 'install_requirements' do
-  command 'pip install -r /opt/cityexplorer/requirements.txt'
-end
+#execute 'install_requirements' do
+#  command 'pip install -r /opt/cityexplorer/requirements.txt'
+#end
  
 # Create service
 template '/etc/systemd/system/cityexplorer.service' do
   source 'cityexplorer.service.erb'
   variables(
-    app_path: '/opt/cityexplorer',
-    app_port: '8000'
+    app_path: '/home/ubuntu/CityExplorer'
   )
 end
+
  
 # Start service
 service 'cityexplorer' do

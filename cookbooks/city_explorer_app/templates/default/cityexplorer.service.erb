@@ -1,0 +1,12 @@
+[Unit]
+Description=City Explorer Website
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=<%= @app_path %>
+ExecStart=pip3 install -r requirements.txt && python3 app.py
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
